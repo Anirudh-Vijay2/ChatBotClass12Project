@@ -5,7 +5,7 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 # ⚠️ Replace with your NEW OpenRouter API key (never share it!)
-API_KEY = "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"
+API_KEY = ""
 
 def chat_with_openrouter(messages):
     url = "https://openrouter.ai/api/v1/chat/completions"
@@ -52,4 +52,5 @@ while True:
     if reply:
         print(Fore.CYAN + f"🤖 Bot: {reply}\n")
         conversation.append({"role": "assistant", "content": reply})
+
 
